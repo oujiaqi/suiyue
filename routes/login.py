@@ -22,3 +22,17 @@ class LoginHandler(BaseHandler):
         else:
             self.redirect("/login")
 
+class RootLoginHandler(BaseHandler):
+    def get(self):
+        self.render('rootlogin.html')
+
+    def post(self):
+        email = self.get_argument("email")
+        password = self.get_argument("password")
+        if email=="suiyue@suiyue.com" and password=="suiyue":
+            self.render("control.html")
+        else:
+            self.redirect("/rootlogin")
+
+
+

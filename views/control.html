@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台登录|岁阅</title>
+	<link rel="stylesheet" href="{{static_url("css/root.css")}}">
+	<link rel="icon" href="{{ static_url("pic/static/logo.png") }}">
+</head>
+<body>
+	<div class="container">
+		<div class='card-control'>
+
+			<table>
+				<caption>词卡管理</caption>
+				<tr>
+    				<th>词卡内容</th>
+    				<th>词卡图片</th>
+    				<th>图片设置</th>
+    				<th>词卡设置</th>
+  				</tr>
+				<tr>
+  					<td>欧家祺</td>
+  					<td><img src="{{ static_url('pic/card/default.jpg') }}" alt="词卡图片"></td>
+  					<td><form action="/" enctype="multipart/form-data" method="post" class="change-form">
+  						<input type="file" name="image">
+						<button id="submit-button" type="submit">设置图片</button>
+					</form></td>
+  					<td><form action="/change" enctype="multipart/form-data" method="post" class="change-form">
+  						<select>
+  							<option value ="volvo">Volvo</option>
+  							<option value ="saab">Saab</option>
+  							<option value="opel">Opel</option>
+  							<option value="audi">Audi</option>
+						</select>
+						<button id="submit-button" type="submit">设置词卡</button>
+					</form></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class='story-control'>
+			<table>
+				<caption>故事管理</caption>
+				<tr>
+    				<th>故事标题</th>
+    				<th>故事内容</th>
+    				<th>故事图片</th>
+    				<th>图片设置</th>
+    				<th>故事设置</th>
+  				</tr>
+				<tr>
+  					<td>欧家祺</td>
+  					<td>欧家祺欧家祺欧家祺欧家祺欧家祺欧家祺欧家祺</td>
+  					<td><img src="{{ static_url("pic/card/default.jpg") }}" alt=""></td>
+  					<td><form action="/" enctype="multipart/form-data" method="post" class="change-form">
+  						<input type="file" name="image">
+						<button id="submit-button" type="submit">设置故事</button>
+					</form></td>
+  					<td><form action="/change" enctype="multipart/form-data" method="post" class="change-form">
+  						<select>
+  							<option value ="volvo">Volvo</option>
+  							<option value ="saab">Saab</option>
+  							<option value="opel">Opel</option>
+  							<option value="audi">Audi</option>
+						</select>
+						<button id="submit-button" type="submit">设置图片</button>
+					</form></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
