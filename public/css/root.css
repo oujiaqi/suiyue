@@ -2,8 +2,17 @@
 	text-align: center;
 }
 
+.card-control, .story-control {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	width: 1300px;
+}
+
 table {
   border-collapse:collapse;
+  width: 100%;
 }
 
 caption {
@@ -21,8 +30,15 @@ th {
 
 td {
 	padding: 10px;
-	min-width: 150px;
-	max-width: 350px;
+	min-width: 80px;
+}
+
+.order-setting {
+	width: 200px;
+}
+
+.pic-setting {
+	width: 350px;
 }
 
 .card-control tr td img{
@@ -35,6 +51,3 @@ td {
 	max-height: 150px;
 }
 
-.card-control {
-	margin-bottom: 20px;
-}

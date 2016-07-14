@@ -30,9 +30,10 @@ class RootLoginHandler(BaseHandler):
         email = self.get_argument("email")
         password = self.get_argument("password")
         if email=="suiyue@suiyue.com" and password=="suiyue":
-            self.render("control.html")
+            self.set_secure_cookie('root', 'suiyue')
+            self.redirect("/control")
         else:
-            self.redirect("/rootlogin")
+            self.redirect('/rootlogin')
 
 
 
