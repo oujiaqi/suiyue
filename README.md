@@ -24,10 +24,10 @@ A thought share website.
 - 要求MySQL 5.6.25或更新版本数据库
 
 ### 代码获取
-- 代码已经部署到github仓库里，仓库地址为[https://github.com/winray/suiyue](https://github.com/winray/suiyue)，也可通过git命令
+- 代码已经部署到github仓库里，仓库地址为[https://github.com/oujiaqi/suiyue](https://github.com/oujiaqi/suiyue)，也可通过git命令
  
     ```
-    git clone https://github.com/winray/suiyue
+    git clone https://github.com/oujiaqi/suiyue
     ```
     
     直接获取。下载的包里还含有数据库建立文件。
